@@ -18,9 +18,9 @@ def trapezoildal(x ,a , b, c , d):
     for v in x: 
         if v<a or v>d:
             y.append(0)
-        elif v<=b or v<=c:
+        elif b<=v<=c:
             y.append(1)
-        elif  v < b:
+        elif  a<= v < b:
             y.append((v-a)/(b-a))
         else:
             y.append((d-v)/(d-c))
